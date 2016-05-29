@@ -1,0 +1,95 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  margin:0; padding:0;
+  
+}
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.clear {
+clear: both;
+}
+
+.gris {
+  background-color: #999999;
+}
+
+.padded {
+padding: 5px;
+}
+
+
+#chicken, #beef, #sushi {
+  width: 150px;
+
+  border: 2px solid black;
+  border-top-width: 0px;
+  border-right-width: 0px;
+   
+  text-align: center;
+  font-size: 1.25em;
+  float: right;
+
+}
+#chicken {
+  background-color: #D59898;
+  }
+
+#beef {
+  background-color: #C14543;
+
+  }
+ #sushi {
+  background-color: #E5D198;;
+  }
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    border: 2px solid black;
+    margin: 1%;   
+    width: 31%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-md-6,  .col-md-12 {
+    float: left;
+    border: 2px solid black;
+	  margin: 1%;
+  }
+ 
+  .col-md-6 {
+    width: 48%;
+	    float: left;
+  }
+
+  .col-md-12 {
+    width: 98%;
+	    float: left;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+.col-xs {
+	width: 94%;
+  border: 2px solid black;
+	margin: 3%;
+	}
+}
